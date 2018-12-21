@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Order Food Online</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Order Food Online</h1>
+        <br />
+        <h3>Free Delivery!</h3>
+    </header>
+    <main>
+
+        <section id="contact-form">
+                <method="GET" action="place-order.php">
+                <h4>Address</h4>
+                <input name="deliveryMethod" type="radio" value="delivery" /> Delivery <br />
+                <input name="deliveryMethod" type="radio" value="pickup" /> Pickup <br /> <br />
+
+                <input name="address1" placeholder="Address Line1" class="lg-input" /> <br />
+                <input name="address2" placeholder="Address Line2" class="lg-input" /> <br />
+
+                <input name="city" placeholder="City" class="sm-input" /> <br />
+                <input name="state" placeholder="State" class="sm-input" /> <br />
+                <input name="zip" placeholder="Zip Code" class="sm-input" />
+                <br/>
+                <br/>
+
+                <h4>Choose Box</h4>
+                <select name="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="big">Big</option>
+                    <option value="extra_big">Extra Big</option>
+                </select>
+
+
+                <h4>Choos Food</h4>
+                <input name="ingredient" type="checkbox" value="vegetables" /> Vegetables <br/>
+                <input name="ingredient" type="checkbox" value="fruits" /> Fruits <br/>
+                <input name="ingredient" type="checkbox" value="cakes" /> Cakes <br/>
+                <input name="ingredient" type="checkbox" value="sweets" /> Sweets <br/>
+                <input name="ingredient" type="checkbox" value="drinks" /> Drinks <br/>
+                <input name="ingredient" type="checkbox" value="salads" /> Salads <br />
+
+                <br/><br/>
+                <button type="submit">Place Order</button>
+
+            </form>
+        </section>
+        <br />
+
+        <footer>
+            &copy; 2018<br/>
+        </footer>
+    </main>
+</body>
+</html>
